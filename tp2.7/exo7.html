@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Timer en temps réel</title>
+        <meta charset="UTF-8">
+        
+    </head>
+    <body>
+       
+        <div id="time">Temps écoulé : 0 secondes</div>
+     
+        <script language="javascript">
+          let time=document.getElementById("time");
+          let compteur=0;
+          setInterval(function(){
+            compteur++;
+            time.textContent="Temps écoulé : "+compteur+" secondes";
+          }
+        ,1000); 
+        </script>
+    </body>
+</html>
