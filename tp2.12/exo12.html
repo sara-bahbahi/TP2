@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title> Responsive avec JavaScript</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="exo12.css">
+    </head>
+    <body>
+        <h2>Responsive site avec javascript</h2>
+        <div class="cadre">Boîte 1</div>
+        <div class="cadre">Boîte 2</div>
+        <div class="cadre">Boîte 3</div>
+        <div class="cadre">Boîte 4</div>
+      
+
+        <script>
+            let boites=document.getElementsByClassName("cadre");
+           
+            function resizing(){
+                if(window.innerWidth<=700){
+                    for(i=0 ; i<boites.length ; i++){
+                        boites[i].style.width="100%";
+                        boites[i].style.display="block";
+                    }
+                }else{
+                    for(i=0 ; i<boites.length ; i++){
+                        boites[i].style.width="49%";
+                        boites[i].style.display="inline-block";
+                    }
+                }
+            }
+
+            resizing();
+
+            window.addEventListener("resize",resizing);
+
+        </script>
+    </body>
+</html>

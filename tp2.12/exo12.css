@@ -1,0 +1,10 @@
+.cadre{
+    border: 1px solid pink;
+    border-radius: 5px;
+    background-color: pink;
+    margin-top: 10px;
+    text-align: center;
+    height: 35px;
+    line-height: 35px;
+    
+}
