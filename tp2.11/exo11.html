@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Filtrage de tableau</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="exo11.css">
+        
+    </head>
+    <body>
+       <h3>Liste de Produits</h3>
+       <input type="text" placeholder="Rechercher un produit..." id="barre">
+       <table id="choix">
+        
+        <tr class="Produit"><td>Ordinateur Portable</td></tr>
+        <tr class="Produit"><td>Smartphone</td></tr>
+        <tr class="Produit"><td>Casque Audio</td></tr>
+        <tr class="Produit"><td>Ecran LED</td></tr>
+        <tr class="Produit"><td>Clavier Mécanique</td></tr>
+        <tr class="Produit"><td>Souris Sans Fil</td></tr>
+       </table>
+       <p id="affiche"></p>
+        <script language="javascript">
+            let Produits=document.getElementsByClassName("Produit");
+            let affiche =document.getElementById("affiche");
+            let element=document.getElementById("barre");
+
+            element.addEventListener("input",function(){
+                let trouve=0;
+                let recherche = element.value.toLowerCase();
+                for(i=0 ; i<Produits.length ;i++){
+                    let texte = Produits[i].textContent.toLowerCase();
+                    if(texte.includes(recherche)){
+                        Produits[i].style.display="";
+                         trouve++;
+                    }else{
+                        Produits[i].style.display="none";
+                        
+                    }
+                }
+
+                if(trouve==0){
+                    affiche.textContent="Aucun résultat";
+
+                }else{
+                    affiche.textContent="";
+                }
+            });
+  
+          
+        </script>
+    </body>
+</html>
