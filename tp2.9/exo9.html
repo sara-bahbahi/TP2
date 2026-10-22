@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>To-do list interactive</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="exo9.css">
+        
+    </head>
+    <body>
+        <h1>To-do list</h1>
+    <div class="cadre">
+       <input type="text" id="tasks" placeholder="ajouter une tâche">
+       <input type="button" value="Ajouter" id="button" onclick="ajouter()">
+       
+       <ul id="parent">
+          
+       </ul>
+    </div>
+        <script language="javascript">
+          let task=document.getElementById("tasks");
+          let parent=document.getElementById("parent");
+         
+          function ajouter(){
+            if(task.value==""){
+                return;
+            }
+            let element=document.createElement("li");
+            element.textContent=task.value;
+            parent.appendChild(element);
+            task.value="";
+
+            let button=document.createElement("button");
+            button.textContent="Supprimer";
+            element.appendChild(button);
+            button.addEventListener("click",function(){
+                parent.removeChild(element);
+
+            });
+          }
+
+        </script>
+    </body>
+</html>
