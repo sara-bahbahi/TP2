@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Modal de notification</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="exo10.css">
+        
+    </head>
+    <body>
+        <input type="button"  id="open" value="Ouvrir" onclick="ouvrir()">
+       <div id="msg">
+        <div class="boite">
+        <p>Notification :</p>
+        <p>My modal notification</p>
+        <input type="button"  id="close" value="fermer" onclick="fermer()">
+        </div>
+       </div>
+        
+     
+        <script language="javascript">
+          let msg=document.getElementById("msg");
+          function ouvrir(){
+            msg.style.display="flex";
+            
+          }
+          
+          function fermer(){
+            msg.style.display="none";
+            
+          }
+
+        </script>
+    </body>
+</html>
