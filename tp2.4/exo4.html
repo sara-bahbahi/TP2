@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title> Calculateur</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="exo4.css">
+    </head>
+    <body>
+        <div id="cadre">
+           <input type="text" id="operation" style="width: 140px; height: 20px;">
+           
+           <div class="buttons">
+              <input type="button" value="C" class="button" onclick="effacer()">
+              <input type="button" value="X" class="button" onclick="supprimer()">
+              <input type="button" value="/" class="button" onclick="Add('/')">
+              <input type="button" value="*" class="button" onclick="Add('*')">
+           </div>
+
+           <div class="buttons">
+              <input type="button" value="7" class="button"  onclick="Add('7')">
+              <input type="button" value="8" class="button"  onclick="Add('8')">
+              <input type="button" value="9" class="button"  onclick="Add('9')">
+              <input type="button" value="-" class="button" onclick="Add('-')">
+           </div>
+
+           <div class="buttons">
+               <input type="button" value="4" class="button"  onclick="Add('4')">
+               <input type="button" value="5" class="button"  onclick="Add('5')">
+               <input type="button" value="6" class="button " onclick="Add('6')">
+               <input type="button" value="+" class="button" onclick="Add('+')">
+           </div>
+
+           <div class="buttons">
+                <input type="button" value="1" class="button "  onclick="Add('1')">
+                <input type="button" value="2" class="button "  onclick="Add('2')">
+                <input type="button" value="3" class="button "  onclick="Add('3')">
+                <input type="button" value="=" class="button" onclick="calculate()">
+           </div>
+
+           <div class="buttons">
+              <input type="button" value="0" class="button2" onclick="Add('0')" >
+              <input type="button" value="." class="button" onclick="Add('.')">
+           </div>
+
+        </div>
+       
+
+        <script language="javascript">
+            let operations=document.getElementById("operation");
+            
+            
+            function Add(number){
+                operations.value = operations.value+ number;
+
+            }
+
+            function effacer(){
+                operations.value ="";
+            }
+
+            function supprimer(){
+                let temp="";
+                for(var i=0 ; i<operations.value.length -1 ;i++){
+                    temp=temp+operations.value[i];
+                }
+                operations.value=temp;
+            }
+
+            function calculate(){
+                var resultat = eval(operations.value);
+                operations.value=resultat;
+            }
+
+
+            
+        </script>
+    </body>
+
+
+</html>
