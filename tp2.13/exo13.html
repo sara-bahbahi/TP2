@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>  Animation de barre de progression</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="exo13.css">
+    </head>
+    <body>
+       <h2>Barre de progression</h2>
+
+       <div id="conteneur">
+       <div id="barre"></div>
+       </div>
+
+
+       <input type="button" value="Démarrer la Progression" id="bouton" onclick="Progression()">
+        <script>
+            let barre=document.getElementById("barre");
+           
+            let progression=0;
+
+            function Progression(){
+
+                if(progression>100){
+                    barre.style.width=0+"%";
+                    progression=0;
+
+                }
+
+
+                let stop =setInterval(function(){
+                if(progression<=100){
+                    barre.style.width=progression+"%";
+                    progression++;
+                }else{
+                    clearInterval(stop);
+
+                     }
+                },60);
+
+            }
+            
+            
+
+        </script>
+    </body>
+</html>

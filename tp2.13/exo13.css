@@ -1,0 +1,33 @@
+body{
+     text-align: center;
+}
+
+
+#conteneur{
+    border: 1px solid rgb(218, 216, 216);
+    border-radius: 4px;
+    height: 20px;
+    margin-top: 60px;
+    width: 800px;
+    margin-left:auto; 
+    margin-right:auto; 
+    background-color: rgb(212, 217, 223);
+    
+}
+
+#bouton{
+    margin-top: 80px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: cornflowerblue;
+    color: aliceblue;
+    font-weight: bold;
+
+}
+
+#barre{
+    width: 0%;
+    border-radius: 4px;
+    height: 20px;
+    background-color: rgb(135, 199, 71);
+}
