@@ -1,0 +1,30 @@
+.cacher{
+     max-height: 0;
+     opacity: 0;
+     overflow: hidden;
+     transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+#menu{
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    font-weight: bold;
+    background-color:  #c9ffd6;
+    color: #2D141A;
+    font-size: 17px;
+    border-radius: 8px;
+}
+
+.button{
+    width: 100px;
+    height: 40px;
+    background-color: #FFF5F7;
+    font-size: 13px;
+    border-radius: 8px;
+    
+}
+
+.button:hover{
+    background-color: #FFD6E0;
+}
