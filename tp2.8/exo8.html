@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Événements de souris</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="exo8.css">
+    </head>
+    <body>
+        
+        <div>
+            Passez la souris ici
+        </div>
+        <script language="javascript">
+           let element=document.getElementsByTagName("div")[0];
+
+           element.addEventListener("mouseover",function(){
+            element.style.backgroundColor="green";
+           });
+           element.addEventListener("mouseout",function(){
+            element.style.backgroundColor="rgb(138, 171, 231)";
+           });
+        </script>
+    </body>
+
+
+</html>

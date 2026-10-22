@@ -1,0 +1,10 @@
+div{
+    width:200px ;
+    height:180px ;
+    background-color:rgb(138, 171, 231);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    
+}
