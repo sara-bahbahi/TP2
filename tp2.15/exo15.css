@@ -1,0 +1,23 @@
+h2{
+    margin-left: 30px;
+}
+
+body{
+    background-color: white;
+    color: black;
+}
+
+.sombre{
+    background-color: black;
+    color: white;
+}
+
+#bouton{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    padding:8px ;
+    border-radius: 5px;
+    background-color: rgb(255, 206, 214);
+}

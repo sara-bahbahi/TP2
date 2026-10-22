@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title> Thème clair/sombre </title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="exo15.css">
+    </head>
+
+    <body>
+        <h2 id="titre">Basculer entre Thème Clair et Sombre</h2>
+
+        <input type="button" value="Activer le Théme Sombre" id="bouton" onclick="Changer()">
+        <script>
+            let bouton=document.getElementById("bouton");
+            let titre=document.getElementById("titre");
+            let change=document.getElementsByClassName("change");
+            let temp=true;
+
+            function Changer(){
+            if(document.body.className==="sombre"){
+                document.body.className = "";
+                bouton.value = "Activer le Thème Sombre";
+                localStorage.setItem("theme", "clair");
+                
+            }else{
+                document.body.className = "sombre";
+                bouton.value = "Activer le Thème Clair";
+                localStorage.setItem("theme", "sombre");
+                
+            }
+            }
+            if (localStorage.getItem("theme") === "sombre") {
+                document.body.className = "sombre";
+                bouton.value = "Activer le Thème Clair";
+            }
+        </script>
+    </body>
+</html>
