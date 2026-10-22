@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="Fr">
+    <head>
+        <title>Carousel d'images </title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="exo5.css">
+        
+    </head>
+    <body>
+
+       
+       <img src="saturn.jpeg" alt="photo of saturn" id="photo"></br>
+
+       <input type="button" value="<< Previous" id="button1" onclick="previous()">
+       <input type="button" value="Next >>" id="button2" onclick="next()">
+
+        <script language="javascript">
+           let photo=document.getElementById("photo") ;
+           let sources=["saturn.jpeg","mars.jpeg" ,"mercury.jpeg","venus.jpeg" ,"uranus.jpeg"]
+           let descriptions=["photo of saturn","photo of mars","photo of mercury","photo of venus","photo of uranus"]
+           let i=0;
+           function next(){
+               i++;
+               if(i>=sources.length){
+                i=0;
+               }
+               photo.setAttribute("src", sources[i]);
+               photo.setAttribute("alt", descriptions[i]);
+               
+           }
+           function previous(){
+               i--;
+               if(i<0){
+                i=0;
+               }
+               photo.setAttribute("src", sources[i]);
+               photo.setAttribute("alt", descriptions[i]);
+               
+           }
+
+        </script>
+    </body>
+</html>

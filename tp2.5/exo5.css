@@ -1,0 +1,42 @@
+#photo{
+   width: 600px;
+   height: 550px;
+   display: block;
+   margin: 0 auto;
+   object-fit: cover;
+   margin-top: 3px;
+   border-radius: 10px;
+   
+}
+
+body {
+    background-color: #0b0d17;
+}
+
+#button1 {
+    text-align: center;
+    background-color: #ffffff1f;
+    color: #f2f2f2;
+    border: 1px solid #ffffff40;
+    border-radius: 5px;
+    padding:8px;
+    margin-left: 20px;
+    width:90px ;
+    height:35px ;
+}
+
+#button2{
+    text-align: center;
+    background-color: #ffffff1f;
+    color: #f2f2f2;
+    border: 1px solid #ffffff40;
+    border-radius: 5px;
+    padding:8px;
+    margin-left: 1125px;
+    width:90px ;
+    height:35px ;
+
+}
+
+
+
