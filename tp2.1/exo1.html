@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="Fr">
+    <head>
+        <title>Changer de style au clic</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="exo1.css">
+        
+    </head>
+    <body>
+        <div id="color1">
+            <p>First row</p>
+            <p>Second row</p>
+        </div> </br>
+
+        <input type="button" value="change background color" id="button" onclick="color()">
+
+        <script language="javascript">
+            let element=document.getElementById("color1");
+            var temp=true;
+            function color(){
+                if(temp){
+                    element.setAttribute("id","color2");
+                    temp=false;
+                }else{
+                    element.setAttribute("id","color1");
+                    temp=true;
+                
+                }
+            }
+            
+
+        </script>
+    </body>
+</html>

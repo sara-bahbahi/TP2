@@ -1,0 +1,22 @@
+div{
+    border: 1px solid black;
+}
+
+p{
+    padding-left: 10px;
+}
+
+#color1{
+    background-color: rgb(159, 161, 163);
+}
+
+#color2{
+    background-color:rgb(253, 198, 206);
+}
+
+#button{
+    padding: 6px 10px;
+    background-color:rgb(250, 206, 213) ;
+    font-weight: bold;
+    border-radius: 5px;
+}
